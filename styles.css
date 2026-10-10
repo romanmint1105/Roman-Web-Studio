@@ -272,6 +272,14 @@ button, summary { -webkit-tap-highlight-color: transparent; }
 
 @media (max-width: 760px) {
   html { scroll-padding-top: 74px; }
+  body.menu-open .site-header {
+    height: 100vh;
+    height: 100dvh;
+    background: var(--cream);
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
   .container { width: min(calc(100% - 30px), var(--container)); }
   .section { padding: 84px 0; }
   .header-inner { height: 72px; }
@@ -282,7 +290,7 @@ button, summary { -webkit-tap-highlight-color: transparent; }
   .menu-button i { display: block; width: 25px; height: 1px; background: var(--ink); transition: transform .25s ease; }
   .menu-button[aria-expanded="true"] i:first-of-type { transform: translateY(4px) rotate(45deg); }
   .menu-button[aria-expanded="true"] i:last-of-type { transform: translateY(-4px) rotate(-45deg); }
-  .site-nav { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: stretch; justify-content: center; gap: 0; padding: 90px 30px 40px; background: var(--cream); transform: translateX(100%); visibility: hidden; transition: transform .3s ease, visibility .3s ease; }
+  .site-nav { position: absolute; z-index: 101; inset: 72px 0 auto; height: calc(100vh - 72px); height: calc(100dvh - 72px); display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; padding: 26px 30px 40px; overflow-y: auto; overscroll-behavior: contain; background: var(--cream); transform: translateX(100%); visibility: hidden; transition: transform .3s ease, visibility .3s ease; }
   .site-nav.open { transform: translateX(0); visibility: visible; }
   .site-nav > a { padding: 15px 6px; border-bottom: 1px solid var(--line); font: 500 25px "Yu Mincho", serif; }
   .site-nav .nav-cta { margin-top: 28px; padding: 16px; border: 0; border-radius: 99px; text-align: center; color: #fff; font: 700 13px system-ui, sans-serif; }
