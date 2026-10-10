@@ -236,6 +236,8 @@ button, summary { -webkit-tap-highlight-color: transparent; }
 .diagnosis-form input, .diagnosis-form select, .diagnosis-form textarea { width: 100%; border: 1px solid #d8dbe0; border-radius: 8px; background: #fbfbfa; color: var(--ink); padding: 12px 13px; outline: none; font-size: 13px; }
 .diagnosis-form input:focus, .diagnosis-form select:focus, .diagnosis-form textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(212, 84, 56, .1); }
 .diagnosis-form textarea { resize: vertical; min-height: 110px; }
+.diagnosis-form .form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.diagnosis-form button:disabled { cursor: wait; opacity: .72; transform: none; }
 .form-help { margin: 12px 0 0; color: #747b85; text-align: center; font-size: 9px; }
 .form-result { margin-top: 16px; padding: 16px; border: 1px solid rgba(212, 84, 56, .3); border-radius: 9px; background: #fff6f3; }
 .form-result b, .form-result span { display: block; }
