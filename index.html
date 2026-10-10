@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a2a">
+  <meta name="description" content="富山の飲食店に特化したWebサイト制作。スマホ対応、メニュー・アクセス・予約導線、お知らせ機能まで、集客につながるサイトを制作します。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="Roman Web Studio｜飲食店のためのWeb制作">
+  <meta property="og:description" content="お店の魅力が、予約につながるサイトへ。富山を拠点に全国オンライン対応。">
+  <title>Roman Web Studio｜飲食店のためのWeb制作</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Roman Web Studio ホーム">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span><b>Roman Web Studio</b><small>Restaurant web design</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        <span class="sr-only">メニューを開く</span><i></i><i></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインメニュー" data-nav>
+        <a href="#service">サービス</a>
+        <a href="#works">制作実績</a>
+        <a href="#price">料金</a>
+        <a href="#flow">制作の流れ</a>
+        <a class="nav-cta" href="#diagnosis">無料診断</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> FOR RESTAURANTS</p>
+          <h1>お店の魅力が、<br><em>予約につながる</em><br>Webサイトへ。</h1>
+          <p class="hero-lead">Instagramで見つけたお客様が、メニュー・営業日・アクセス・予約方法を迷わず確認できる。飲食店のための、伝わって動かすサイトを制作します。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#diagnosis">無料サイト診断を相談する <span>→</span></a>
+            <a class="text-link" href="#works">制作実績を見る <span>↘</span></a>
+          </div>
+          <ul class="hero-facts" aria-label="サービスの特徴">
+            <li><b>¥49,800</b><span>初回3店舗限定</span></li>
+            <li><b>Mobile first</b><span>スマホ最優先</span></li>
+            <li><b>Toyama / Online</b><span>全国対応</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-showcase reveal reveal-delay" aria-label="飲食店サイトの制作イメージ">
+          <div class="showcase-orbit orbit-one" aria-hidden="true"></div>
+          <div class="showcase-orbit orbit-two" aria-hidden="true"></div>
+          <div class="desktop-mockup">
+            <div class="browser-bar"><span></span><span></span><span></span><small>your-restaurant.jp</small></div>
+            <div class="restaurant-screen">
+              <div class="screen-nav"><b>LA TABLE</b><i>Menu　Story　Access</i></div>
+              <p>Seasonal dining</p>
+              <strong>一皿に、<br>季節の記憶を。</strong>
+              <button type="button" tabindex="-1">Reserve a table</button>
+              <div class="screen-dish" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="phone-mockup" aria-hidden="true">
+            <div class="phone-notch"></div>
+            <div class="phone-brand">LA TABLE</div>
+            <div class="phone-photo"><i></i></div>
+            <div class="phone-copy"><b>季節のコース</b><span></span><span></span></div>
+            <div class="phone-cta">電話で予約</div>
+          </div>
+          <div class="floating-note note-one"><b>迷わない導線</b><span>予約まで最短2タップ</span></div>
+          <div class="floating-note note-two"><b>お知らせ更新</b><span>季節メニューにも対応</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="対応内容">
+      <div class="container trust-inner">
+        <span>SMARTPHONE</span><i></i><span>MENU</span><i></i><span>RESERVATION</span><i></i><span>NEWS</span><i></i><span>GOOGLE MAP</span>
+      </div>
+    </section>
+
+    <section class="section problem" id="service">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div><p class="eyebrow"><span></span> THE GAP</p><h2>SNSだけでは、<br>伝えきれない情報があります。</h2></div>
+          <p>「営業日は？」「駐車場は？」「予約は電話？」。お客様が知りたい情報が散らばっていると、来店前に離脱されることがあります。Webサイトは、情報を整えて予約へつなぐ“お店の案内役”です。</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card reveal"><span>01</span><div class="line-icon icon-search" aria-hidden="true"></div><h3>情報が見つからない</h3><p>SNSの過去投稿に営業時間やメニューが埋もれ、初めてのお客様が迷ってしまう。</p></article>
+          <article class="problem-card reveal"><span>02</span><div class="line-icon icon-phone" aria-hidden="true"></div><h3>スマホで見づらい</h3><p>文字や画像が小さい、ボタンが押しにくい。来店前のスマホ検索に対応できていない。</p></article>
+          <article class="problem-card reveal"><span>03</span><div class="line-icon icon-route" aria-hidden="true"></div><h3>予約につながらない</h3><p>電話・DM・地図への導線が分かりづらく、興味を持ったお客様が途中で離れてしまう。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solution-section">
+      <div class="container solution-layout">
+        <div class="solution-intro reveal">
+          <p class="eyebrow light"><span></span> WHAT WE BUILD</p>
+          <h2>見た目だけでなく、<br>お客様が動ける設計に。</h2>
+          <p>料理や空間の魅力を伝えながら、「知る・比べる・予約する」までの流れをひとつに整えます。</p>
+          <a class="button button-light" href="#price">プラン内容を見る <span>→</span></a>
+        </div>
+        <div class="solution-list">
+          <article class="solution-item reveal"><b>01</b><div><h3>スマホを最優先したデザイン</h3><p>地図・電話・メニュー・Instagramへ、片手でも迷わず進める画面を設計します。</p></div></article>
+          <article class="solution-item reveal"><b>02</b><div><h3>お店らしさが伝わる構成</h3><p>写真・文章・色を整理し、価格だけで比較されない“選ばれる理由”を見せます。</p></div></article>
+          <article class="solution-item reveal"><b>03</b><div><h3>公開後も更新できる仕組み</h3><p>イベントや季節メニューのお知らせを追加しやすくし、必要に応じて更新も代行します。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div><p class="eyebrow"><span></span> CASE STUDY</p><h2>実際の店舗で、<br>運用まで考えて制作。</h2></div>
+          <p>公開して終わりではなく、ドメイン・SSL・スマホ表示・更新方法まで整えています。数値実績は計測できたものだけを掲載します。</p>
+        </div>
+
+        <article class="case-study reveal">
+          <a class="case-visual" href="https://jardindessens.jp/" target="_blank" rel="noopener noreferrer" aria-label="ル・ジャルダン・デ・サンスのサイトを見る">
+            <div class="case-browser">
+              <div class="case-bar"><span></span><span></span><span></span><em>jardindessens.jp</em></div>
+              <div class="case-screen">
+                <small>RESTAURANT FRANÇAIS</small><strong>Le Jardin<br>des Sens</strong><i></i><p>季節と素材を大切にした<br>富山のフランス料理店</p>
+              </div>
+            </div>
+            <span class="case-open">LIVE SITE ↗</span>
+          </a>
+          <div class="case-content">
+            <p class="case-label">RESTAURANT / TOYAMA</p>
+            <h3>ル・ジャルダン・デ・サンス</h3>
+            <p>既存サイトの引継ぎからサーバー移行、SSL化、WordPress導入、スマホ表示の改善まで対応。イベント情報を画像付きで掲載できるお知らせ機能も追加しました。</p>
+            <dl class="case-details">
+              <div><dt>対応範囲</dt><dd>移行・デザイン・更新機能</dd></div>
+              <div><dt>主な導線</dt><dd>電話予約・Instagram・お知らせ</dd></div>
+              <div><dt>運用環境</dt><dd>WordPress / Xserver</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="case-study case-study-reverse reveal">
+          <a class="case-visual case-visual-warm" href="https://touounokitchen.jp/" target="_blank" rel="noopener noreferrer" aria-label="東欧のキッチンのサイトを見る">
+            <div class="case-browser">
+              <div class="case-bar"><span></span><span></span><span></span><em>touounokitchen.jp</em></div>
+              <div class="case-screen shop-screen">
+                <small>HANDMADE EASTERN EUROPEAN FOOD</small><strong>東欧の<br>キッチン</strong><div class="product-row"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <span class="case-open">LIVE SITE ↗</span>
+          </a>
+          <div class="case-content">
+            <p class="case-label">FOOD EC / ONLINE</p>
+            <h3>東欧料理のオンラインショップ</h3>
+            <p>商品情報、送料、注文方法をスマホで確認しやすく整理。商品選択からオンライン決済まで、購入者が迷わない販売導線を構築しました。</p>
+            <dl class="case-details">
+              <div><dt>対応範囲</dt><dd>構成・商品設計・決済導線</dd></div>
+              <div><dt>主な機能</dt><dd>商品一覧・注文・オンライン決済</dd></div>
+              <div><dt>対応端末</dt><dd>PC / Tablet / Mobile</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section price-section" id="price">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span> PRICE</p>
+          <h2>必要なものを絞って、<br>始めやすい価格に。</h2>
+          <p>最初から大規模なサイトを作るのではなく、来店前に必要な情報と予約導線を優先して制作します。</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card featured reveal">
+            <div class="price-badge">初回3店舗限定</div>
+            <p class="price-name">Restaurant Start</p>
+            <h3>飲食店サイト制作</h3>
+            <div class="price"><small>制作費</small><strong>49,800</strong><span>円（税込）</span></div>
+            <p class="price-note">写真と文章をご用意いただいた場合の基本料金です。</p>
+            <ul>
+              <li>1ページ構成・スマホ対応</li>
+              <li>メニュー・店舗情報・アクセス</li>
+              <li>電話・地図・Instagram導線</li>
+              <li>基本SEO・OGP・SSL設定</li>
+              <li>公開作業・1か月サポート</li>
+            </ul>
+            <a class="button button-primary full" href="#diagnosis">対象になるか相談する <span>→</span></a>
+          </article>
+          <article class="price-card reveal">
+            <p class="price-name">Monthly Support</p>
+            <h3>公開後の更新サポート</h3>
+            <div class="price"><small>月額</small><strong>5,500</strong><span>円（税込）</span></div>
+            <p class="price-note">必要な月だけではなく、継続して任せたい店舗向けです。</p>
+            <ul>
+              <li>月2回まで文章・画像を更新</li>
+              <li>イベント・お知らせ作成補助</li>
+              <li>表示・リンクの定期確認</li>
+              <li>アクセス状況の簡易報告</li>
+              <li>軽微な修正相談</li>
+            </ul>
+            <a class="button button-outline full" href="#diagnosis">運用について相談する <span>→</span></a>
+          </article>
+        </div>
+        <p class="price-caution">※ページ追加、予約システム、オンライン決済、撮影、ロゴ制作などは内容を確認のうえ個別にお見積もりします。</p>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="flow">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div><p class="eyebrow"><span></span> PROCESS</p><h2>専門用語なしで、<br>一緒に進めます。</h2></div>
+          <p>「何を載せればいいか分からない」段階でも大丈夫です。必要な情報を整理しながら、公開まで進めます。</p>
+        </div>
+        <ol class="flow-list">
+          <li class="reveal"><span>01</span><div><h3>無料相談・サイト診断</h3><p>現在のお悩み、SNS、既存サイトなどを確認します。</p></div><small>DM / ONLINE</small></li>
+          <li class="reveal"><span>02</span><div><h3>構成・お見積もり</h3><p>必要な情報と機能を整理し、制作内容を明確にします。</p></div><small>PLAN</small></li>
+          <li class="reveal"><span>03</span><div><h3>デザイン・制作</h3><p>写真や文章を整え、スマホ表示を優先して制作します。</p></div><small>DESIGN</small></li>
+          <li class="reveal"><span>04</span><div><h3>確認・公開</h3><p>表示と導線を確認し、サーバー・ドメイン設定まで対応します。</p></div><small>LAUNCH</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container faq-layout">
+        <div class="faq-heading reveal"><p class="eyebrow"><span></span> FAQ</p><h2>よくある質問</h2><p>ここにない内容も、無料相談で確認できます。</p></div>
+        <div class="faq-list">
+          <details class="reveal"><summary>写真や文章が揃っていなくても相談できますか？<i></i></summary><p>可能です。必要な素材を一緒に整理し、文章のたたき台も作成します。撮影が必要な場合は別途ご相談ください。</p></details>
+          <details class="reveal"><summary>公開後、自分で更新できますか？<i></i></summary><p>更新頻度に応じて、WordPressなどご自身で更新できる構成も提案できます。更新を任せたい場合は月額サポートをご利用いただけます。</p></details>
+          <details class="reveal"><summary>ドメインやサーバーが分かりません。<i></i></summary><p>取得・設定・SSL化までサポートします。現在契約しているサービスがある場合は、内容を確認して最適な方法をご案内します。</p></details>
+          <details class="reveal"><summary>富山県外からも依頼できますか？<i></i></summary><p>全国オンラインで対応しています。打ち合わせはメッセージやオンライン通話で進められます。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="diagnosis" id="diagnosis">
+      <div class="container diagnosis-layout">
+        <div class="diagnosis-copy reveal">
+          <p class="eyebrow light"><span></span> FREE CHECK</p>
+          <h2>あなたのお店のサイト、<br>無料で確認します。</h2>
+          <p>既存サイトやSNSを見て、「情報の不足」「スマホでの見え方」「予約までの導線」を確認します。制作を依頼するかは診断後に決めていただけます。</p>
+          <ul><li>営業電話はしません</li><li>相談だけでも大丈夫です</li><li>通常2営業日以内に返信</li></ul>
+        </div>
+        <form class="diagnosis-form reveal" data-diagnosis-form>
+          <label><span>店舗名 <em>必須</em></span><input type="text" name="shop" autocomplete="organization" required placeholder="例：レストラン○○"></label>
+          <label><span>サイトまたはSNSのURL</span><input type="url" name="url" inputmode="url" placeholder="https://..."></label>
+          <label><span>一番近いお悩み</span><select name="issue"><option>サイトを新しく作りたい</option><option>今のサイトを改善したい</option><option>スマホ表示を見直したい</option><option>予約・問い合わせを増やしたい</option><option>更新を任せたい</option><option>まだ分からない</option></select></label>
+          <label><span>相談したい内容</span><textarea name="message" rows="4" placeholder="現在困っていることや、ご希望があればご記入ください。"></textarea></label>
+          <button class="button button-primary full" type="submit">相談内容を作成する <span>→</span></button>
+          <p class="form-help">入力内容を相談文としてコピーし、InstagramのDMを開きます。自動送信はされません。</p>
+          <div class="form-result" role="status" aria-live="polite" data-form-result hidden>
+            <b>相談文をコピーしました。</b><span>Instagramが開いたら、DMへ貼り付けて送信してください。</span>
+            <a href="https://www.instagram.com/roman.webstudio/" target="_blank" rel="noopener noreferrer">Instagramを開く ↗</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand"><span class="brand-mark">R</span><div><b>Roman Web Studio</b><small>Restaurant web design</small></div></div>
+      <p>富山を拠点に、飲食店の魅力と必要な情報を<br>分かりやすく届けるWebサイトを制作しています。</p>
+      <a href="https://www.instagram.com/roman.webstudio/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
+    </div>
+    <div class="container footer-bottom"><small>© <span data-year></span> Roman Web Studio</small><div><a href="#top">PAGE TOP ↑</a></div></div>
+  </footer>
+</body>
+</html>

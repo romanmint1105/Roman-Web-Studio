@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f1e9"/>
+  <path d="M0 0h1200v630H0z" fill="none" stroke="#d9d1c3"/>
+  <circle cx="1030" cy="40" r="340" fill="#d45438" opacity=".1"/>
+  <circle cx="1030" cy="40" r="260" fill="none" stroke="#111a2a" opacity=".12"/>
+  <rect x="78" y="76" width="72" height="72" rx="36" fill="#111a2a"/>
+  <text x="114" y="128" text-anchor="middle" fill="#fffdf9" font-size="48" font-family="Georgia,serif" font-style="italic">R</text>
+  <text x="172" y="106" fill="#111a2a" font-size="28" font-family="Georgia,serif" font-weight="700">Roman Web Studio</text>
+  <text x="172" y="135" fill="#69717d" font-size="14" font-family="sans-serif" letter-spacing="4">RESTAURANT WEB DESIGN</text>
+  <text x="80" y="295" fill="#111a2a" font-size="66" font-family="serif" font-weight="600">お店の魅力が、</text>
+  <text x="80" y="385" fill="#d45438" font-size="82" font-family="serif" font-weight="600">予約につながる</text>
+  <text x="80" y="475" fill="#111a2a" font-size="66" font-family="serif" font-weight="600">Webサイトへ。</text>
+  <text x="84" y="552" fill="#5e6674" font-size="22" font-family="sans-serif" letter-spacing="2">富山を拠点に全国オンライン対応</text>
+</svg>
