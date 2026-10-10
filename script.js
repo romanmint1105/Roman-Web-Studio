@@ -45,11 +45,8 @@
   });
 
   const diagnosisForm = document.querySelector('[data-diagnosis-form]');
-  const diagnosisFrame = document.querySelector('[data-diagnosis-frame]');
-  let diagnosisSubmitted = false;
-
-  diagnosisForm?.addEventListener('submit', () => {
-    diagnosisSubmitted = true;
+  diagnosisForm?.addEventListener('submit', async (event) => {
+    event.preventDefault();
     const button = diagnosisForm.querySelector('[data-submit-button]');
     const result = diagnosisForm.querySelector('[data-form-result]');
     if (button) {
@@ -57,21 +54,31 @@
       button.firstChild.textContent = '送信中… ';
     }
     if (result) result.hidden = true;
-  });
 
-  diagnosisFrame?.addEventListener('load', () => {
-    if (!diagnosisSubmitted || !diagnosisForm) return;
-    diagnosisSubmitted = false;
-    const button = diagnosisForm.querySelector('[data-submit-button]');
-    const result = diagnosisForm.querySelector('[data-form-result]');
-    diagnosisForm.reset();
-    if (button) {
-      button.disabled = false;
-      button.firstChild.textContent = '無料診断を申し込む ';
-    }
-    if (result) {
-      result.hidden = false;
-      result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    try {
+      await fetch(diagnosisForm.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: new FormData(diagnosisForm)
+      });
+      diagnosisForm.reset();
+      if (result) {
+        result.querySelector('b').textContent = '無料診断を受け付けました。';
+        result.querySelector('span').textContent = '内容を確認し、通常2営業日以内にご連絡します。';
+        result.hidden = false;
+        result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    } catch (error) {
+      if (result) {
+        result.querySelector('b').textContent = '送信できませんでした。';
+        result.querySelector('span').textContent = '通信状況を確認し、もう一度お試しください。';
+        result.hidden = false;
+      }
+    } finally {
+      if (button) {
+        button.disabled = false;
+        button.firstChild.textContent = '無料診断を申し込む ';
+      }
     }
   });
 })();
